@@ -1,1 +1,3 @@
-# wesbos-nextjs-sick-fits
+# Sick Fits
+
+Project from Wes Bos "Advanced React" course.
