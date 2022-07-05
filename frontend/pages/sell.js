@@ -1,5 +1,12 @@
+// Components:
+import CreateProduct from '../components/CreateProduct';
+
 function SellPage() {
-  return <div>SellPage</div>;
+  return (
+    <div>
+      <CreateProduct />
+    </div>
+  );
 }
 
 export default SellPage;
