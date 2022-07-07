@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { useUser } from './User';
 
+// Components:
+import SignOut from './SignOut';
+
 // Styled components:
 import NavStyles from './styles/NavStyles';
 
@@ -15,6 +18,7 @@ export default function Nav() {
           <Link href="/sell">Sell</Link>
           <Link href="/orders">Orders</Link>
           <Link href="/account">Account</Link>
+          <SignOut />
         </>
       )}
       {!user && (
