@@ -6,6 +6,7 @@ import {
   statelessSessions,
 } from "@keystone-next/keystone/session";
 import { insertSeedData } from "./seed-data";
+import { sendPasswordResetEmail } from "./lib/mail";
 
 // Schemas:
 import { User } from "./schemas/User";
@@ -30,7 +31,7 @@ const { withAuth } = createAuth({
   },
   passwordResetLink: {
     async sendToken(args) {
-      console.log(args);
+      await sendPasswordResetEmail(args.token, args.identity);
     },
   },
 });
