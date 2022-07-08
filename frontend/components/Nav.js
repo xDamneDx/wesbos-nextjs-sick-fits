@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 // Components:
 import SignOut from './SignOut';
+import CartCount from './CartCount';
 
 // Styled components:
 import NavStyles from './styles/NavStyles';
@@ -25,6 +26,12 @@ export default function Nav() {
           <SignOut />
           <button type="button" onClick={openCart}>
             My Cart
+            <CartCount
+              count={user.cart.reduce(
+                (tally, cartItem) => tally + cartItem.quantity,
+                0
+              )}
+            />
           </button>
         </>
       )}
