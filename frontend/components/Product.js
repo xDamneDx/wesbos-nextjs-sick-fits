@@ -3,6 +3,7 @@ import formatMoney from '../lib/formatMoney';
 
 // Components:
 import DeleteProduct from './DeleteProduct';
+import AddToCart from './AddToCart';
 
 // Styled components:
 import ItemStyles from './styles/ItemStyles';
@@ -29,6 +30,7 @@ function Product({ product }) {
         >
           Edit ✏️
         </Link>
+        <AddToCart id={product.id} />
         <DeleteProduct id={product.id}>Delete</DeleteProduct>
       </div>
     </ItemStyles>
