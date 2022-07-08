@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import formatMoney from '../lib/formatMoney';
 import calcTotalPrice from '../lib/calcTotalPrice';
 
+// Components:
+import RemoveFromCart from './RemoveFromCart';
+
 // Styled component:
 import CartStyles from './styles/CartStyles';
 import SupremeStyles from './styles/SupremeStyles';
@@ -37,7 +40,7 @@ function CartItem({ cartItem }) {
         src={product.photo.image.publicUrlTransformed}
         alt={product.name}
       />
-      <dir>
+      <div>
         <h3>{product.name}</h3>
         <p>
           {formatMoney(product.price * cartItem.quantity)} -{' '}
@@ -45,7 +48,8 @@ function CartItem({ cartItem }) {
             {cartItem.quantity} &times; {formatMoney(product.price)} each
           </em>{' '}
         </p>
-      </dir>
+      </div>
+      <RemoveFromCart id={cartItem.id} />
     </CartItemStyles>
   );
 }
