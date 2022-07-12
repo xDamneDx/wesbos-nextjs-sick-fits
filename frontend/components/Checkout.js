@@ -11,7 +11,7 @@ import { useMutation } from '@apollo/client';
 import styled from 'styled-components';
 import nProgress from 'nprogress';
 import { useRouter } from 'next/router';
-import useCart from '../lib/cartState';
+import { useCart } from '../lib/cartState';
 import { CURRENT_USER_QUERY } from './User';
 
 // Styled components:
