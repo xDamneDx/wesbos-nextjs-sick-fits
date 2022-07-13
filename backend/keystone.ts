@@ -15,6 +15,7 @@ import { ProductImage } from "./schemas/ProductImage";
 import { CartItem } from "./schemas/CartItem";
 import { OrderItem } from "./schemas/OrderItem";
 import { Order } from "./schemas/Order";
+import { Role } from "./schemas/Role";
 import { extendGraphqlSchema } from "./mutations";
 
 const databaseURL =
@@ -65,6 +66,7 @@ export default withAuth(
       CartItem,
       OrderItem,
       Order,
+      Role,
     }),
     extendGraphqlSchema,
     ui: {
