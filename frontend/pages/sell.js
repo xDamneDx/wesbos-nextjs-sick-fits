@@ -1,10 +1,13 @@
 // Components:
 import CreateProduct from '../components/CreateProduct';
+import PleaseSignIn from '../components/PleaseSignIn';
 
 function SellPage() {
   return (
     <div>
-      <CreateProduct />
+      <PleaseSignIn>
+        <CreateProduct />
+      </PleaseSignIn>
     </div>
   );
 }
