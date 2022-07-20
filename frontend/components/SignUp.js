@@ -10,7 +10,7 @@ import ErrorMessage from './ErrorMessage';
 // Styled components:
 import FormStyles from './styles/FormStyles';
 
-const SIGNUP_MUTATION = gql`
+export const SIGNUP_MUTATION = gql`
   mutation SIGNUP_MUTATION(
     $name: String!
     $email: String!
