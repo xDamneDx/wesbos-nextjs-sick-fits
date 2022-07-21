@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateProduct/> renders and matches snapshot 1`] = `
+<div>
+  <form
+    class="FormStyles-sc-lfnj3o-0 dHqVho"
+  >
+    <fieldset
+      aria-busy="false"
+    >
+      <label
+        for="image"
+      >
+        Image
+        <input
+          id="image"
+          name="image"
+          required=""
+          type="file"
+        />
+      </label>
+      <label
+        for="name"
+      >
+        Name
+        <input
+          autocomplete="off"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required=""
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        for="price"
+      >
+        Price
+        <input
+          id="price"
+          name="price"
+          placeholder="Price"
+          required=""
+          type="number"
+          value=""
+        />
+      </label>
+      <label
+        for="description"
+      >
+        Description
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Description"
+        />
+      </label>
+      <button
+        type="submit"
+      >
+        + Add Product
+      </button>
+    </fieldset>
+  </form>
+</div>
+`;
