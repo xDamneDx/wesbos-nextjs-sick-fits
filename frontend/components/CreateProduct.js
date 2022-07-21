@@ -12,7 +12,7 @@ import FormStyles from './styles/FormStyles';
 // Hooks:
 import useForm from '../lib/useForm';
 
-const CREATE_PRODUCT_MUTATION = gql`
+export const CREATE_PRODUCT_MUTATION = gql`
   mutation CREATE_PRODUCT_MUTATION(
     # Which variables are getting passed in? And What types are they
     $name: String!
