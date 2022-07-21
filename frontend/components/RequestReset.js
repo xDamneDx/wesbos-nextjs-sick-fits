@@ -10,7 +10,7 @@ import ErrorMessage from './ErrorMessage';
 // Styled components:
 import FormStyles from './styles/FormStyles';
 
-const REQUEST_RESET_MUTATION = gql`
+export const REQUEST_RESET_MUTATION = gql`
   mutation REQUEST_RESET_MUTATION($email: String!) {
     sendUserPasswordResetLink(email: $email) {
       code
